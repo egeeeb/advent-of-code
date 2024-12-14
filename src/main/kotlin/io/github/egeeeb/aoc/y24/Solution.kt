@@ -1,5 +1,6 @@
 package io.github.egeeeb.aoc.y24
 
+import io.github.egeeeb.aoc.util.AOCUtil
 import org.springframework.stereotype.Component
 import java.io.File
 
@@ -9,6 +10,6 @@ interface Solution {
 
     fun solve(input: String):String
     fun solve(file: File):String {
-        return solve("")
+        return solve(AOCUtil.fileToString(file))
     }
 }

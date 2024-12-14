@@ -1,6 +1,5 @@
 package io.github.egeeeb.aoc.y24
 
-import io.github.egeeeb.aoc.y24.day1.Day1Solution
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
