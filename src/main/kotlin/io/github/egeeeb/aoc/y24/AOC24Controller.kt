@@ -17,6 +17,6 @@ class AOC24Controller(val solutions: List<Solution>) {
     @PostMapping("/{day}/solve")
     fun postSolve(@PathVariable day: Day, @RequestBody input: String): String {
         val solution = solutions.first { it.day() == day }
-        return solution.solve("")
+        return solution.solve(input)
     }
 }

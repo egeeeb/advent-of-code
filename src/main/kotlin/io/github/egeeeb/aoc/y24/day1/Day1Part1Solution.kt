@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component
 import kotlin.math.absoluteValue
 
 @Component
-class Day1Solution : Solution {
+class Day1Part1Solution : Solution {
     override fun solve(input: String): String {
         val lists = parse(input)
         val sortedLists = sortedLists(lists)
@@ -41,6 +41,6 @@ class Day1Solution : Solution {
     data class PairOfList(val first: List<Int>, val second: List<Int>)
 
     override fun day(): Day {
-        return Day.DAY1
+        return Day.DAY1_PART1
     }
 }

@@ -28,12 +28,13 @@ class AOC24ControllerTest{
     @Test
     fun `postSolve should invoke correct Solution with given day`() {
         val expected = UUID.randomUUID().toString()
+        val input = UUID.randomUUID().toString()
 
         Mockito.`when`(solutionTest1.day()).thenReturn(Day.TEST1)
         Mockito.`when`(solutionTest2.day()).thenReturn(Day.TEST2)
-        Mockito.`when`(solutionTest1.solve("")).thenReturn(expected)
+        Mockito.`when`(solutionTest1.solve(input)).thenReturn(expected)
 
-        val result = aoC24Controller.postSolve(Day.TEST1, "")
+        val result = aoC24Controller.postSolve(Day.TEST1, input)
 
         assertEquals(expected, result)
     }
