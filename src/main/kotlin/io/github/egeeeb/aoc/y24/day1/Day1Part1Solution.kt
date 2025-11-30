@@ -1,12 +1,12 @@
 package io.github.egeeeb.aoc.y24.day1
 
-import io.github.egeeeb.aoc.y24.Day
-import io.github.egeeeb.aoc.y24.Solution
+import io.github.egeeeb.aoc.Day
+import io.github.egeeeb.aoc.y24.Solution24
 import org.springframework.stereotype.Component
 import kotlin.math.absoluteValue
 
 @Component
-class Day1Part1Solution : Solution {
+class Day1Part1Solution : Solution24 {
     override fun solve(input: String): String {
         val lists = parse(input)
         val sortedLists = sortedLists(lists)

@@ -30,8 +30,8 @@ class Day1Part2SolutionTest {
     }
 
     @Test
-    fun `solve should give ? given the example input file`(){
-        val solution = day1Part2Solution.solve(File("src/test/resources/day1/input"))
+    fun `solve should give xx given the example input file`(){
+        val solution = day1Part2Solution.solve(File("src/test/resources/y24/day1-input"))
 
         kotlin.test.assertEquals("22565391", solution)
     }

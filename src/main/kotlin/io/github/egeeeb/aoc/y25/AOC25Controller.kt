@@ -1,4 +1,4 @@
-package io.github.egeeeb.aoc.y24
+package io.github.egeeeb.aoc.y25
 
 import io.github.egeeeb.aoc.Day
 import org.springframework.web.bind.annotation.PathVariable
@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@RequestMapping("/aoc24")
-class AOC24Controller(val solutions: List<Solution24>) {
+@RequestMapping("/aoc25")
+class AOC25Controller(val solutions: List<Solution25>) {
 
     init {
-        println("AOC24Controller")
+        println("AOC25Controller")
     }
 
     @PostMapping("/{day}/solve")

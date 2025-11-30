@@ -31,7 +31,7 @@ class Day1Part1SolutionTest{
 
     @Test
     fun `solve should give 3574690 given the example input file`(){
-        val solution = day1Part1Solution.solve(File("src/test/resources/day1/input"))
+        val solution = day1Part1Solution.solve(File("src/test/resources/y24/day1-input"))
 
         assertEquals("3574690", solution)
     }
