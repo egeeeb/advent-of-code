@@ -1,11 +1,11 @@
 package io.github.egeeeb.aoc.y24.day1
 
-import io.github.egeeeb.aoc.y24.Day
-import io.github.egeeeb.aoc.y24.Solution
+import io.github.egeeeb.aoc.Day
+import io.github.egeeeb.aoc.y24.Solution24
 import org.springframework.stereotype.Component
 
 @Component
-class Day1Part2Solution : Solution {
+class Day1Part2Solution : Solution24 {
     override fun day(): Day {
         return Day.DAY1_PART2
     }

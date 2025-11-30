@@ -1,5 +1,6 @@
 package io.github.egeeeb.aoc.y24
 
+import io.github.egeeeb.aoc.Day
 import org.junit.jupiter.api.Test
 import org.mockito.Mockito
 import org.springframework.beans.factory.annotation.Autowired
@@ -19,11 +20,11 @@ class AOC24ControllerTest{
 
     @MockitoBean
     @Qualifier("test1")
-    lateinit var solutionTest1: Solution
+    lateinit var solutionTest1: Solution24
 
     @MockitoBean
     @Qualifier("test2")
-    lateinit var solutionTest2: Solution
+    lateinit var solutionTest2: Solution24
 
     @Test
     fun `postSolve should invoke correct Solution with given day`() {
